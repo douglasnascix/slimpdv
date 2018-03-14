@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /AC/
+  
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+
+  RewriteRule ^([a-z]+)\/([a-z]+)\/?$ index.php?modulo=$1&pagina=$2 [NC,L]
+  RewriteRule ^([a-z]+)\/([a-z]+)\/([a-z0-9]+)\/?$ index.php?modulo=$1&pagina=$2&id=$3 [NC,L]
+
+  RewriteRule ^([a-z]+)\/([a-z]+)\/([a-z0-9]+)\/([a-z]+)\/([a-z0-9]+)\/?$ index.php?modulo=$1&pagina=$2&id=$3&funcao=$4&funcao_id=$5 [NC,L]
+
+  RewriteRule ^login login.php [L]
+  RewriteRule ^logout logout.php [L]
+
+  
+</IfModule>

@@ -1,0 +1,7 @@
+Excluir Pedido Completo
+
+Verificar se não é cupom sat
+Apagar pedido pagamento
+Apagar pedido produto
+Voltar itens para estoque
+Excluir pedido

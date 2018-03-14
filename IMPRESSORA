@@ -1,0 +1,6 @@
+REMOVER
+rundll32 printui.dll,PrintUIEntry /dl /n "Sweda Printer"
+
+
+INSTALAR
+rundll32 printui.dll,PrintUIEntry /if /b "Sweda Printer" /f C:\SwedaPrinter\x32\swedaprinter.inf /r "COM3:" /m "Sweda Printer"
